@@ -1,0 +1,18 @@
+{
+  "name": "appelsinvand-life",
+  "repository": "https://mortenJelle@bitbucket.org/mortenJelle/appelsinvand-life.git",
+  "author": "Morten Jelle <zoulember@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "pretty-quick": "^3.1.3"
+  }
+}
