@@ -39,13 +39,13 @@ jobs:
 
       - name: Build
         run: |
-          cd ./app/website
+          cd ./apps/website
           yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './app/website/build'
+          path: './apps/website/build'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
