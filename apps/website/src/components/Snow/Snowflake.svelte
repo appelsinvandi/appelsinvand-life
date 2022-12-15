@@ -71,8 +71,7 @@
     font-size: var(--distance);
 
     animation: var(--falltime) linear var(--delay) infinite FallingAnimation,
-      var(--sway-speed) ease-in-out var(--delay) infinite SwayingAnimation,
-      var(--rotation-speed) ease-in-out var(--delay) infinite RotatingAnimation;
+      var(--sway-speed) ease-in-out var(--delay) infinite SwayingAnimation;
 
     user-select: none;
     cursor: default;
