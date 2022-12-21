@@ -18,8 +18,6 @@
     justify-content: center;
     align-items: center;
 
-    background-color: orange;
-
     overflow: hidden;
   }
 </style>

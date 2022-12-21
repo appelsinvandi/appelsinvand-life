@@ -10,10 +10,24 @@
   <meta name="description" content="Det er min appelsinvand" />
 </svelte:head>
 
-<FallingParticles particle="❄" />
-<WavesSmall />
-<WavesBig />
-<BouncingParticle particle="🍊" />
+<div class="appelsinvand">
+  <FallingParticles particle="❄" />
+  <WavesSmall />
+  <WavesBig />
+  <BouncingParticle particle="🍊" />
+</div>
 
 <style lang="scss">
+  .appelsinvand {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: orange;
+  }
 </style>
