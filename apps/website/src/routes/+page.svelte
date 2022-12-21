@@ -1,8 +1,8 @@
 <script>
-  import Orange from '../components/Orange/Orange.svelte'
+  import BouncingParticle from '../components/BobbingParticle/BobbingParticle.svelte'
   import WavesSmall from '../components/WavesSmall/WavesSmall.svelte'
   import WavesBig from '../components/WavesBig/WavesBig.svelte'
-  import Snow from '../components/Snow/Snow.svelte'
+  import FallingParticles from '../components/FallingParticles/FallingParticles.svelte'
 </script>
 
 <svelte:head>
@@ -10,10 +10,10 @@
   <meta name="description" content="Det er min appelsinvand" />
 </svelte:head>
 
-<Snow />
+<FallingParticles particle="❄" />
 <WavesSmall />
 <WavesBig />
-<Orange />
+<BouncingParticle particle="🍊" />
 
 <style lang="scss">
 </style>

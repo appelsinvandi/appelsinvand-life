@@ -1,26 +1,26 @@
 <script lang="ts">
+  export let particle: string
+
   let horizontalOffset = 120 * Math.random() - 10
   let distance = Math.round(10 + 10 * Math.random())
   let falltime = 10 + 10 * Math.random()
   let delay = 20 * Math.random()
   let swaySpeed = 2 + 2 * Math.random()
-  let rotationSpeed = 4 + 4 * Math.random()
 </script>
 
 <span
-  class="snowflake"
+  class="particle"
   role="img"
-  aria-label="snowflake"
+  aria-label="particle"
   style="
     --sway-speed: {swaySpeed}s;
-    --rotation-speed: {rotationSpeed}s;
     --horizontal-offset: {horizontalOffset}%;
     --distance: {distance}px;
     --falltime: {falltime}s;
     --delay: {delay}s;
   "
 >
-  &#x2744;
+  {particle}
 </span>
 
 <style lang="scss">
@@ -48,19 +48,7 @@
     }
   }
 
-  @keyframes RotatingAnimation {
-    0% {
-      transform: rotate(-24deg);
-    }
-    50% {
-      transform: rotate(24deg);
-    }
-    100% {
-      transform: rotate(-24deg);
-    }
-  }
-
-  .snowflake {
+  .particle {
     position: absolute;
     top: -10%;
     left: var(--horizontal-offset);
