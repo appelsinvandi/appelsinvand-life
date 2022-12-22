@@ -1,5 +1,5 @@
 <script>
-  import BouncingParticle from '../components/BobbingParticle/BobbingParticle.svelte'
+  import BobbingParticle from '../components/BobbingParticle/BobbingParticle.svelte'
   import WavesSmall from '../components/WavesSmall/WavesSmall.svelte'
   import WavesBig from '../components/WavesBig/WavesBig.svelte'
   import FallingParticles from '../components/FallingParticles/FallingParticles.svelte'
@@ -14,7 +14,7 @@
   <FallingParticles particle="❄" />
   <WavesSmall />
   <WavesBig />
-  <BouncingParticle particle="🍊" />
+  <BobbingParticle particle="🍊" />
 </div>
 
 <style lang="scss">
