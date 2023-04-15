@@ -11,7 +11,6 @@
 </svelte:head>
 
 <div class="appelsinvand">
-  <FallingParticles particle="❄" />
   <WavesSmall />
   <WavesBig />
   <BobbingParticle particle="🍊" />
